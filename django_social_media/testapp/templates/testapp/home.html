@@ -1,0 +1,23 @@
+{% extends "testapp/base.html" %}
+
+{% block title %}
+    <title>Home</title>
+{% endblock %}
+
+{% block content %}
+        {% if data %}
+            <article class="media content-section">
+                <div class="media-body">
+                    <div class="article-metadata">
+                        <a class="mr-2" href="#">Adrian Holovaty, Simon Willison</a>  <!-- Author-->
+                        <small class="text-muted">15 July 2005</small>                <!-- DateTime-->
+                    </div>
+                    <h2><a class="article-title" href="#">Django</a></h2>           <!-- Title-->
+                    <p class="article-content">Django is a Python-based free and open-source web framework,
+                                            which follows the model-template-view (MTV) architectural pattern.
+                                            It is maintained by the Django Software Foundation (DSF),
+                                            an independent non-profit organization.</p>                 <!-- Content-->
+                </div>
+            </article>
+        {% endif %}
+{% endblock content %}
